@@ -227,15 +227,72 @@ arr[i] > arr[i+1] → array is not sorted
 - Boolean flag usage
 - Early loop termination for efficiency
 
+Descending Order Check
 
+# Check if Array is in Descending Order — Java
 
+This program checks whether a given integer array is sorted in
+descending order or not.
 
+---
 
+## 🟢 Problem Statement
 
+Given an array `arr[]`, determine whether the elements are in
+strict descending order.
 
+Example
 
+Input  : [31, 29, 27, 20, 11]
+Output : Array is in Descending order
 
+Input  : [29, 27, 28, 31, 3]
+Output : Array is not in Descending order
 
+---
+
+## ✅ Approach
+
+1. Assume the array is sorted (`isSorted = true`)
+2. Traverse the array
+3. Compare each element with the next one
+4. If any element is **less than** the next element
+   - array is not descending
+   - stop early using `break`
+5. Print result
+
+---
+
+## 🧠 Logic Used
+
+arr[i] < arr[i+1] → array is not descending
+
+yaml
+Copy code
+
+---
+
+## ⏱️ Time & Space Complexity
+
+- Time Complexity  : O(n)
+- Space Complexity : O(1)
+
+---
+
+## 🧪 Test Cases Considered
+
+- Strict descending array
+- Not descending
+- Duplicate values
+- Single element array
+
+---
+
+## 🎯 Learning Outcome
+
+- Pairwise element comparison
+- Boundary condition handling
+- Efficient early exit logic
 
 
 Array Left Rotation — Java Solutions
