@@ -4,7 +4,7 @@ public class arrayDescending {
       {
     	  boolean isSorted=true;
     	  int [] arr= {29,27,28,31,3};
-    	  for(int i=0;i<=arr.length-1;i++)
+    	  for(int i=0;i<arr.length-1;i++)
     	  {
     		  if(arr[i]<arr[i+1])
     		  {
@@ -27,3 +27,4 @@ public class arrayDescending {
 	}
 
 }
+
