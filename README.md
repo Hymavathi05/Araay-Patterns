@@ -127,6 +127,7 @@ Output:
          * * *  *
          *      *
          *      *
+         
          *      *
          * * *  *
 
@@ -161,3 +162,102 @@ Pattern logic development
 Output formatting
 
 Strong foundation for DSA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Array Left Rotation — Java Solutions
+
+This repository contains two implementations of the Left Rotation of an Array problem in Java:
+
+Iterative Single-Shift Approach (Brute Force)
+
+Optimal Reversal Algorithm (O(n), In-Place)
+
+Both programs rotate the array to the left by k positions.
+
+🟢 Problem Statement
+
+Given an array arr[] and an integer k, rotate the array to the left by k positions.
+
+Example:
+
+Input  : [1, 2, 3, 4], k = 2
+Output : [3, 4, 1, 2]
+
+✅ Solution 1 — Iterative Single-Shift (Brute Force)
+
+File: LeftRotateArray.java
+
+Approach
+
+Normalize rotation count using k % n
+
+Repeat k times:
+
+Store arr[0] in temp
+
+Shift elements one step left
+
+Place temp at last index
+
+Complexity
+
+Time : O(k * n)
+
+Space : O(1)
+
+✔ Simple and readable
+❌ Slower for large k
+
+🚀 Solution 2 — Optimal Reversal Algorithm
+
+File: OptimalSolutionOfLeftRotateArray.java
+
+Approach (3-Step Reverse)
+
+1️⃣ Reverse first k elements
+2️⃣ Reverse remaining n-k elements
+3️⃣ Reverse entire array
+
+Complexity
+
+Time : O(n)
+
+Space : O(1) (in-place)
+
+✔ Efficient for large arrays
+✔ No extra memory
+
+🧪 Test Cases Covered
+
+k = 0
+
+k = 1
+
+k > n
+
+Single-element array
+
+Normal rotation
+
+🎯 Learning Outcomes
+
+Difference between brute-force vs optimal solutions
+
+In-place array manipulation
+
+Time–space trade-offs
+
+Writing clean & structured Java code
