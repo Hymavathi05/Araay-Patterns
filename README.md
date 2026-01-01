@@ -164,7 +164,68 @@ Output formatting
 Strong foundation for DSA
 
 
+# Check if Array is in Ascending Order — Java
 
+This program checks whether a given integer array is sorted in
+ascending order or not.
+
+---
+
+## 🟢 Problem Statement
+
+Given an array `arr[]`, determine whether the array elements are in
+strict ascending order.
+
+Example
+
+Input  : [11, 27, 29, 31, 33]  
+Output : Array is in Ascending order
+
+Input  : [11, 27, 29, 31, 3]  
+Output : Array is not in Ascending order
+
+---
+
+## ✅ Approach
+
+1. Assume the array is sorted (`isSorted = true`)
+2. Iterate through the array
+3. Compare each element with the next element
+4. If any element is greater than the next element
+   - mark `isSorted = false`
+   - break the loop
+5. Print result based on the flag
+
+---
+
+## 🧠 Logic Used
+
+arr[i] > arr[i+1] → array is not sorted
+
+---
+
+## ⏱️ Time & Space Complexity
+
+- Time Complexity  : O(n)
+- Space Complexity : O(1)
+
+---
+
+## 🧪 Test Cases Considered
+
+- Sorted array
+- Unsorted array
+- Duplicate values
+- Single element array
+
+---
+
+## 🎯 Learning Outcome
+
+- Array traversal
+- Conditional comparisons
+- Boolean flag usage
+- Early loop termination for efficiency
 
 
 
